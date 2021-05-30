@@ -7,3 +7,11 @@ index = client.init_index('ag')
 index = client.init_index('items')
 batch = JSON.parse(File.read('items.json'))
 index.save_objects(batch)
+
+index.set_settings({
+  searchableAttributes: [
+    'name',
+    'description',
+    'brand'
+  ]
+})
