@@ -19,8 +19,7 @@ index.set_settings({
   ],
   attributesForFaceting: [
     'searchable(brand)',
-    'type',
-    'categories',
+    'hierarchicalCategories',
     'price'
   ]
 })

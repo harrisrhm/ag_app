@@ -31,7 +31,12 @@ search.addWidgets([
     }),
     instantsearch.widgets.hierarchicalMenu({
         container: "#hierarchical-menu",
-        attributes: ["hierarchicalCategories"]
+        attributes: [
+            "hierarchicalCategories.lvl0",
+            "hierarchicalCategories.lvl1",
+            "hierarchicalCategories.lvl2",
+            "hierarchicalCategories.lvl3"
+        ],
     }),
     instantsearch.widgets.rangeSlider({
         container: "#range-slider",
