@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset-min.css" integrity="sha256-t2ATOGCtAIZNnzER679jwcFcKYfLlw01gli6F6oszk8=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../assets/style.css"
+    <title>Business.com</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="title">
+        <h1>Business.com</h1>
+      </div>
+
+      <div class="search-panel">
+        <div class="left-panel">
+          <div id="current-refinements"></div>
+
+          <h2>Brands</h2>
+          <div id="brand-list"></div>
+
+          <h2>Categories</h2>
+          <div id="hierarchical-menu"></div>
+
+          <h2>Price</h2>
+          <div id="range-slider"></div>
+        </div>
+
+        <div class="right-panel">
+          <div id="searchbox"></div>
+          <div id="hits"></div>
+          <div id="pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CArray.prototype.includes%2CPromise%2CObject.assign%2CObject.entries"></script>
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js" integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js" integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM=" crossorigin="anonymous"></script>
+    <script src="../assets/app.js"></script>
+  </body>
+</html>
