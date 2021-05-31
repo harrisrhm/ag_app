@@ -6,6 +6,7 @@ GEM
       multi_json (~> 1.0)
       net-http-persistent
     connection_pool (2.2.5)
+    dotenv (2.7.6)
     faraday (1.4.2)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
@@ -30,6 +31,7 @@ PLATFORMS
 
 DEPENDENCIES
   algolia
+  dotenv
 
 BUNDLED WITH
    2.2.16
