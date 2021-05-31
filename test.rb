@@ -15,3 +15,10 @@ index.set_settings({
     'brand'
   ]
 })
+
+index.set_settings({
+  customRanking: [
+    'desc(rating)',
+    'desc(popularity)'
+  ]
+})
