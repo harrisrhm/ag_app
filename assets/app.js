@@ -20,15 +20,18 @@ search.addWidgets([
                 <p>{{#helpers.highlight}}{ "attribute": "description" }{{/helpers.highlight}}</p>
                 </article>
                 `
-        }
+            }
     }),
+
     instantsearch.widgets.currentRefinements({
         container: "#current-refinements"
     }),
+
     instantsearch.widgets.refinementList({
         container: "#brand-list",
         attribute: "brand"
     }),
+
     instantsearch.widgets.hierarchicalMenu({
         container: "#hierarchical-menu",
         attributes: [
@@ -38,10 +41,12 @@ search.addWidgets([
             "hierarchicalCategories.lvl3"
         ],
     }),
+
     instantsearch.widgets.rangeSlider({
         container: "#range-slider",
         attribute: "price"
     }),
+    
     instantsearch.widgets.pagination({
         container: "#pagination"
     })
