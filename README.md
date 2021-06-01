@@ -24,10 +24,20 @@ The application and logic is written in HTML, CSS, VanillaJS and Ruby.
 | 4	   | Configure index within script       | Complete   |             -                                           |
 | 4.1  | Define seachable criteria	         | Complete   | Declared attributes are 'name', 'description', 'brand'  | 
 | 4.2  | Custom ranking criteria             | Complete   | Diplayed products with higher rating attribute          |
-| 4.3  | Optional configuration settings	 | Complete	  | Incorporated drop down hierarchicalCatagories to root   |
+| 4.3  | Optional configuration settings	 | Complete	  | Incorporated drop down hierarchicalCatagories to root level   |
 | 5	   | Download broken frontend            | Complete   |	Refer 'troubleshooting' section                         |
 | 6	   | Trobleshoot broken code             | Complete   |	Refer 'troubleshooting' section                         |
 | 6.1  | Set attributesForFaceting	         | Complete   |	Refer 'troubleshooting' section                         |
 | 7    | Grant access to view indices        | Complete   |	            -                                           |
 | 8    | Run index script                    | Complete   |	Refer 'instruction' section                             |
 | 9    | API Key                             | Complete   |	Admin API key is stored in .env file for final indexing script. For front-end search-only API key is used and this is stored in JS file |
+
+## Troubleshooting
+
+| Issue/rework | Description                            | Action                                                               | Result                                                  | Status                 |
+| ------------ | -------------------------------------  | ---------------------------------------------------------------      | -----------------------------------------------------   | ---------------------- |
+| 1 - rework   | Separation of concern                  | Created folder structure to separate HTML, CSS, JS and Ruby script   |  HTML => index.html in root directory
+Ruby index scripting => lib/main.rb
+JS => src/app.js
+CSS => src/style.css
+JSON => data/items.json  |  Resolved |
