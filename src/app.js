@@ -1,11 +1,13 @@
-
+// initialize algoliasearch
 const searchClient = algoliasearch("LG58UB0A5R","b51486811f3c3c0abbc28ba6e4352dde");
 
+// initialize instancesearch with index name in account
 const search = instantsearch({
     indexName: 'items',
     searchClient,
 });
 
+// widgets showcase on search instance
 search.addWidgets([
     instantsearch.widgets.searchBox({
         container: "#searchbox"
@@ -52,5 +54,6 @@ search.addWidgets([
     })
 ]);
 
+// trigger search
 search.start();
 
